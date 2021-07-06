@@ -1,0 +1,131 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+nav{
+    background-color:#95d5b2;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-weight: bold;
+}
+ul{
+    display: flex;
+    width: 400px;
+    list-style: none;
+    /* border: 1px solid black; */
+    justify-content: space-evenly;
+}
+a{
+    /* margin: auto 20px; */
+    text-decoration: none;
+    color: #540b0e;
+}
+/* .section1{
+    border: 4px solid burlywood;
+    margin: 40px auto;
+    height: 400px;
+    width: 90vw;
+} */
+/* .section1{
+    border: 1px solid black;
+    background: #000;
+    margin:3px auto;
+    overflow: hidden;
+} */
+.section1 div{
+    height: 400px;
+    width: 90vw;
+    border: 2px solid brown;
+    margin: 40px auto;
+    animation-name: slider;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction:normal;
+    animation-timing-function: ease-in;
+    background-position: center;
+}
+/* section div img{
+    width: 800px; 
+    height: 341px;
+/* } */
+section:nth-of-type(2){
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px;
+} 
+figure img{
+    margin: 8px;
+    width: 200px;
+    height: 200px;
+}
+figure{
+    width: 250px;
+    height: 350px;
+    text-align: center;
+    margin: 10px;
+    border: 2px solid brown;
+}
+figure h3,h2{
+    margin: 7px;
+}
+button{
+    margin: 10px;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+footer{
+    background-color:#43aa8b ;
+    display: flex;
+    justify-content: center;
+}
+figure:hover{
+    transform: scale(1.09);
+    cursor: pointer;
+}
+@media screen and (max-width:600px) {
+    nav,ul{
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section1 div{
+        width: 60vw;
+    }
+}
+@keyframes slider {
+    0% {
+        background-image: url("https://previews.123rf.com/images/pattarasin/pattarasin1608/pattarasin160800029/61300199-sale-banner-template-80-off-vector-concept-of-online-shop.jpg");
+         background-repeat: no-repeat;
+         background-size: contain;
+         background-color: rgb(186, 212, 186);
+        }
+	25% { 
+       background-image: url("https://image.shutterstock.com/image-vector/sale-banner-template-design-260nw-487080769.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(186, 212, 186);
+        transform: translateX(-100px);
+     }
+	50% { 
+        background-image: url("https://static.vecteezy.com/system/resources/thumbnails/001/631/797/small/pastel-gradient-geometric-shape-sale-banner-advertisement-free-vector.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(186, 212, 186);
+        transform: translateX(100px);
+     }
+	75% { 
+        background-image: url("https://media.istockphoto.com/vectors/sale-banner-template-design-vector-id945107144");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(186, 212, 186);
+        transform: translateX(-100px);
+     }
+    100%{
+        background-image: url("https://image.shutterstock.com/image-vector/vector-white-shop-online-sign-260nw-1695240010.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-color: rgb(186, 212, 186);
+        transform: translateX(100px);
+    }
+}
